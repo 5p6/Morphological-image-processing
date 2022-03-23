@@ -14,3 +14,4 @@ for i=2:x+1
     end
 end
 end
+%击中击不中变换
