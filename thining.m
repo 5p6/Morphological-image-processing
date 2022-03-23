@@ -16,3 +16,4 @@ for j=1:t
     end
 end
 end
+%形态学细化
