@@ -18,6 +18,6 @@ for i=0:c
     end
 end
 for i=1:c
-    F=s(:,:,i)+0;
+    F=s(:,:,i)+F;
 end
 end
