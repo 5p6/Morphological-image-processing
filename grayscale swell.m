@@ -9,7 +9,13 @@ g((x-1)/2+1:x1+(x-1)/2,(y-1)/2+1:(y-1)/2+y1)=F;
 for i=(x-1)/2+1:x1+(x-1)/2
     for j=(y-1)/2+1:(y-1)/2+y1
         g_s=g(i-(x-1)/2:i+(x-1)/2,j-(y-1)/2:j+(y-1)/2);
-        f(i-(x-1)/2,j-(y-1)/2)=max(max(b.*g_s));
+        t=b.*g_s;
+        h=find(b);
+        if size(h,1)~=0
+        f(i-(x-1)/2,j-(y-1)/2)=max(max(g_s(h)));
+        else
+        f(i-(x-1)/2,j-(y-1)/2)=0;
+        end
     end
 end
 end
