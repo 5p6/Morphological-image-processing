@@ -1,4 +1,4 @@
-function f=cut(g)
+function f=crop(g)
 [x,y]=size(g);
 B=zeros(3,3,8);
 B(:,:,1)=[0 0.1 0.1;1 1 0.1;0 0.1 0.1];
